@@ -1,4 +1,6 @@
 class Category:
+    '''для работы с категориями товаров и список товаров. при инициализации если не передавать список то создаст
+     пустой словарь.'''
     categories_count = 0
     unique_products_count = 0
 
@@ -14,6 +16,7 @@ class Category:
 
 
 class Product:
+    '''пока особо ничего не делает, может хранить только распарсинную инфу из списка словарей'''
     def __init__(self, name: str, description : str, price: float, in_stock: int):
         self.name = name
         self.description = description
